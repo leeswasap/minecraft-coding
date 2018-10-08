@@ -1,0 +1,27 @@
+마인크래프트로 배우는 코딩 책의 명령어를 1.13+ 의 명령어로 변환하는 정보입니다.
+
+[page 8]
+(1.12.2이하) /gamemode 1
+(1.13이상) /gamemode creative
+
+[page 20,21]
+(1.12.2이하) testfor @p[r=5] 와 /title @p title {"text":"안녕~ Hi~"}
+(1.13이상 ) execute as @p[distance=..2] at @s if entity @a run title @a title {"text":"안녕~"}
+/// 1.12.2이하의 두가지 명령어가 1.13부터는 위와 같이 한줄의 명령어로 바뀌었습니다. 급하게 하다보니 멀티플레이 테스트를
+/// 못했습니다. 혹시 @p, @a의 문제가 있다면 직접 수정해보세요.
+
+[page 23]
+(1.12.2이하) effect asap00 minecraft:invisibility 30
+(1.13이상) /effect give asap2 minecraft:invisibility 30 1
+
+[page 28]
+(1.12.2이하) /scoreboard objectives add ASAP stat.mineBlock.minecraft.tnt
+(1.13이상) /scoreboard objectives add ASAP minecraft.mined:minecraft.tnt
+
+[page 28]
+(1.12.2이하) /gamemode 0
+(1.13이상) /gamemode survival
+
+[page 30]
+(1.12.2이하) testforblock -159 75 314 minecraft:chest -1 {Items:[{id:"minecraft:tnt",Slot:18b}]}
+(1.13이상) 추가 영상 확인 요망.
