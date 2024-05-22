@@ -13,6 +13,7 @@
 [page 23]
 (1.12.2이하) effect asap00 minecraft:invisibility 30
 (1.13이상) /effect give asap2 minecraft:invisibility 30 1
+(1.20이상) /effect give @p minecraft:invisibility infinite 30 true/
 
 [page 28]
 (1.12.2이하) /scoreboard objectives add ASAP stat.mineBlock.minecraft.tnt
